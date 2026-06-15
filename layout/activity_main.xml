@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@drawable/bg_movies_pattern">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:id="@+id/cardLogin"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_login_card"
+            android:orientation="vertical"
+            android:paddingHorizontal="28dp"
+            android:paddingVertical="36dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvLogoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAS"
+                android:textColor="#FFFFFF"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EST. 2026"
+                android:textColor="#666666"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="28dp"
+                android:letterSpacing="0.1" />
+
+            <EditText
+                android:id="@+id/etProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="Display Name"
+                android:textColorHint="#757575"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="14dp"
+                android:inputType="text"
+                android:drawableStart="@drawable/ic_profile"
+                android:drawablePadding="10dp"
+                android:drawableTint="#757575" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="Username"
+                android:textColorHint="#757575"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="14dp"
+                android:inputType="text"
+                android:drawableStart="@drawable/ic_profile"
+                android:drawablePadding="10dp"
+                android:drawableTint="#757575" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="Password"
+                android:textColorHint="#757575"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="14dp"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_favorite"
+                android:drawablePadding="10dp"
+                android:drawableTint="#757575" />
+
+            <EditText
+                android:id="@+id/etServerUrl"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="Server URL (http://url_here.com:port)"
+                android:textColorHint="#757575"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textUri"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:drawableTint="#757575" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddProfile"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@android:color/white"
+                android:text="Sign In"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
